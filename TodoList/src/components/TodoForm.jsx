@@ -1,6 +1,6 @@
 import {useState} from "react"
 
-export function NewTodoForm({onSubmit}){
+export default function TodoForm({onSubmit}){
         // this is called destructuring
     // the destructured is on the right
     // the variables storing the results are on the left

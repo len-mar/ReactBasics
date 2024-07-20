@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
+
 export function TodoItem({completed, id, title, toggleTodo, deleteTodo}) {
     return (
         <li>
@@ -10,7 +13,8 @@ export function TodoItem({completed, id, title, toggleTodo, deleteTodo}) {
             {/* It's important to always pass in actual functions (with arrow notation) 
             instead of the call itself - otherwise, 
             React will call the function and try and display its result*/}
-            <button onClick={() => deleteTodo(id)} className="btn btn-danger">Delete</button>
+            <button  className="btn btn-danger" ><FontAwesomeIcon icon={faTrashCan}onClick={() => deleteTodo(id)} />
+            </button>
         </li>
     )
 }

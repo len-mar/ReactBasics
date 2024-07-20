@@ -1,12 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Press Start 2P", system-ui;
   box-sizing: border-box;
 }
 
 body {
   background: #333;
   color: hsl(200, 100%, 90%);
-  max-width: 400px;
+  max-width: 500px;
   padding: 1rem;
   margin: 0 auto;
 }
@@ -14,20 +16,26 @@ body {
 .new-item-form {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .form-row {
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
+} 
+
+.header{
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+
 }
 
 .btn {
   background: hsl(200, 100%, 50%, 0.1);
   border: 1px solid hsl(199, 100%, 50%);
   color: hsl(201, 38%, 85%);
-  padding: 0.25em 0.5em;
+  padding: 1em 1.5em;
   border-radius: 0.25em;
   cursor: pointer;
   outline: none;
@@ -38,10 +46,10 @@ body {
   background: hsl(200, 100%, 50%, 0.2);
 }
 
-.btn.btn-danger {
-  background: hsl(0, 100%, 40%, 0.1);
-  border: 1px solid hsl(0, 100%, 40%);
-  color: hsl(0, 100%, 40%);
+.icon{
+  background: hsla(0, 27%, 18%, 0.1);
+  border: 1px solid hsl(0, 100%, 71%);
+  color: hsl(0, 100%, 87%);
 }
 
 .btn.btn-danger:hover,
@@ -55,7 +63,7 @@ body {
   background: hsl(200, 100%, 83%);
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
-  color: hsl(200, 100%, 90%);
+  color: hsl(200, 80%, 16%);
 }
 
 .new-item-form input:focus {
@@ -64,6 +72,7 @@ body {
 
 .header {
   font-size: 1.5rem;
+  color: hsl(200, 93%, 82%);
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -71,7 +80,6 @@ body {
 .list {
   margin: 0;
   padding: 0;
-  margin-left: 1rem;
   list-style: none;
 }
 
@@ -82,7 +90,7 @@ body {
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 1rem;
 }
 
 .list li {
@@ -138,3 +146,4 @@ body {
 .list li:has(input:checked) label:hover::before {
   background: hsl(200, 100%, 30%);
 }
+
